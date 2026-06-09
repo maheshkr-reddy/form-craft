@@ -55,6 +55,12 @@ java -jar target/form-builder-1.0.0.jar
 
 The app starts at **http://localhost:3000**
 
+<img width="1891" height="953" alt="form-craft" src="https://github.com/user-attachments/assets/a5497149-7a17-4509-b804-981e022a2576" />
+
+
+<img width="1558" height="953" alt="form-craft-preview" src="https://github.com/user-attachments/assets/4d59c115-0ed5-47e0-9f7f-8f61035a7adf" />
+
+
 ## API endpoints
 
 | Method | Path | Description |
