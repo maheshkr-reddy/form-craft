@@ -1,0 +1,6 @@
+com\formcraft\formbuilder\model\SaveFormResponse.class
+com\formcraft\formbuilder\controller\FormController.class
+com\formcraft\formbuilder\model\SaveFormRequest.class
+com\formcraft\formbuilder\FormBuilderApplication.class
+com\formcraft\formbuilder\model\Form.class
+com\formcraft\formbuilder\service\FormService.class
