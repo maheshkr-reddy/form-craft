@@ -88,20 +88,6 @@ The app starts at **http://localhost:3000**
 { "success": true, "id": "form_1717920000000" }
 ```
 
-## EJS → Thymeleaf conversion notes
-
-| EJS | Thymeleaf |
-|-----|-----------|
-| `<%= form.name %>` | `th:text="${form.name}"` |
-| `<%- JSON.stringify(form.schema) %>` | `/*[[${schemaJson}]]*/` inside `th:inline="javascript"` |
-| `href="/css/..."` | `th:href="@{/css/...}"` |
-| `src="/js/..."` | `th:src="@{/js/...}"` |
-
-The `<%-` (unescaped) EJS expression for the schema JSON is handled by:
-1. The controller pre-serializes `form.schema` to a JSON string (`schemaJson` model attribute).
-2. The template uses `th:inline="javascript"` with the `/*[[ ]]*/` syntax so Thymeleaf outputs raw
-   JavaScript-safe JSON without HTML-encoding it.
-
 ## Upgrading to persistent storage (optional)
 
 The current `FormService` stores forms in a `LinkedHashMap` — data is lost on restart.
